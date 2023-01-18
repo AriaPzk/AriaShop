@@ -46,7 +46,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem;
     align-items: center;
 }
 
