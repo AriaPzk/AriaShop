@@ -2,15 +2,22 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+
+}
+
+/* Colors */
+:root {
+    --color-black: #000;
 }
 
 /* Typography */
 html {
     font-size: 62.5%;
+
 }
 
 body {
-    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2rem;
     line-height: 1.5;
     color: var(--color-body);
@@ -103,8 +110,60 @@ body {
 }
 
 /* Icons */
-
 .icon {
     width: 40px;
     height: 40px;
+}
+
+.hero {
+    background-color: var(--color-black);
+    height: 120vh;
+}
+
+.hero>h1 {
+    color: #fff;
+    margin: 0;
+    padding: 20rem 0 1rem 0;
+    text-align: center;
+}
+
+.hero>a {
+    text-decoration: none;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn {
+    margin: auto;
+    display: inline-flex;
+    height: 3rem;
+    padding: 1.5rem;
+    background: var(--color-black);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: rgb(48, 43, 43);
+}
+
+.btn__icon {
+    margin-left: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn__icon>img {
+    width: 1.5rem;
 }
